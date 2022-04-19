@@ -10,6 +10,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
+    "dotenv": "^16.0.0",
     "framer-motion": "^6.3.0",
     "hardhat": "^2.9.3",
     "react": "^18.0.0",
@@ -43,6 +44,7 @@
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
     "@nomiclabs/hardhat-waffle": "^2.0.3",
     "chai": "^4.3.6",
     "ethereum-waffle": "^3.4.4",
