@@ -45,14 +45,14 @@ const MainMint = ({ accounts, setAccounts }) => {
         <Flex justify="center" align="center" height="100vh" paddingBottom="150px">
             <Box width="520px">
                 <div>
-                  <Text fontSize="48px" textShadow="0 5px #000000">NFT</Text>
+                  <Text fontSize="48px" textShadow="0 8px #000000" >ARCANE NFTs</Text>
                   <Text
-                    fontSize="40px"
+                    fontSize="50px"
                     letterSpacing="-5.5%"
                     fontFamily="VT323"
                     textShadow="0 2px 2px #000000"
                    > 
-                      Mint NFTs to check them out.
+                      Tribute to one of the best Animated Series made.
                    </Text>   
                 </div>
 
