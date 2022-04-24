@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {ethers, BigNumber} from 'ethers';
+import { Box, Button, Flex, Input, Text} from '@chakra-ui/react';
 import NFT from './NFT.json';
 
 const NFTAddress = "0xAec567Ac3a62ddE6aa3E56cc29cCe455BbF9dB5A"; //address of the deployed mint
@@ -41,22 +42,90 @@ const MainMint = ({ accounts, setAccounts }) => {
     };
 
     return(
-        <div>
-            <h1>NFT</h1>
-            <p>Mint NFTs to check them out.</p>
-            {isConnected ? (
+        <Flex justify="center" align="center" height="100vh" paddingBottom="150px">
+            <Box width="520px">
                 <div>
-                    <div>
-                        <button onClick={handleDecrement}>-</button>
-                        <input type="number" value={mintAmount} />
-                        <button onClick={handleIncrement}>+</button>
-                    </div>
-                    <button onClick={handleMint}>Mint Now</button>
+                  <Text fontSize="48px" textShadow="0 5px #000000">NFT</Text>
+                  <Text
+                    fontSize="40px"
+                    letterSpacing="-5.5%"
+                    fontFamily="VT323"
+                    textShadow="0 2px 2px #000000"
+                   > 
+                      Mint NFTs to check them out.
+                   </Text>   
                 </div>
-            ):(
-                <p>You must be connected to Mint.</p>
-            )}
-        </div>
+
+                {isConnected ? (
+                    <div>
+                        <Flex align="center" justify="center">
+                            <Button
+                             backgroundColor="#D6517D"
+                             borderRadius="5px"
+                             boxShadow="0px 2px 2px 1px #0F0F0F"
+                             color="white"
+                             cursor="pointer"
+                             fontFamily="inherit"
+                             padding="15px"
+                             marginTop="10px" 
+                             onClick={handleDecrement}
+                            >
+                              -
+                            </Button>
+                            <Input
+                              readOnly
+                              fontFamily="inherit"
+                              width="100px"
+                              height="40px"
+                              textAlign="center"
+                              paddingLeft="19px"
+                              marginTop="10px"
+                              type="number" 
+                              value={mintAmount} />
+                            
+                            <Button
+                             backgroundColor="#D6517D"
+                             borderRadius="5px"
+                             boxShadow="0px 2px 2px 1px #0F0F0F"
+                             color="white"
+                             cursor="pointer"
+                             fontFamily="inherit"
+                             padding="15px"
+                             marginTop="10px" 
+                             onClick={handleIncrement}
+                            >
+                              +
+                            </Button>
+                        </Flex>
+                        
+                         <Button
+                         backgroundColor="#D6517D"
+                         borderRadius="5px"
+                         boxShadow="0px 2px 2px 1px #0F0F0F"
+                         color="white"
+                         cursor="pointer"
+                         fontFamily="inherit"
+                         padding="15px"
+                         marginTop="10px" 
+                         onClick={handleMint}
+                        >
+                          Mint Now
+                        </Button>
+                    </div>
+                ):(
+                    <Text
+                     marginTop="70px"
+                     fontSize="33px"
+                     letterSpacing="-5.5%"
+                     fontFamily="VT323"
+                     textShadow="0 1px #000000"
+                     color="#D6517D"
+                    > 
+                      You must be connected to Mint.
+                    </Text>
+                )}
+            </Box>
+        </Flex>
     )
 }
 
