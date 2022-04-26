@@ -5,7 +5,7 @@
 .App{
     text-align: center;
     font-family: "Press Start 2P","VT323";
-    color:rgb(14, 13, 13);
+    color:white;
 }
 
 *{
@@ -31,8 +31,9 @@ body{
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     bottom: 0;
-    background-image: "assets/assets/background/arc22.jpg";
+    background-image: url(assets/background/arcane4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
