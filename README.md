@@ -1,15 +1,3 @@
-# Basic Sample Hardhat Project
+NFT mint website to mint ARCANE NFT's. Arcane is a Netflix animated series based on the MOBA game - League of Legends.
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+This is a tribute to this wonderful piece of Art and has in NO way any connection with the original series or its creators.
