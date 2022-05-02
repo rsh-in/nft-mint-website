@@ -1,0 +1,20 @@
+{
+    "name" : "Violet",
+    "description" : "she wields a pair of powerful hextech gauntlets that can punch through buildings-and people-with little trouble",
+    "image" : "https://ipfs.io/ipfs/Qmd1dqVBTcnZqPxmNG4jYtT5NtYkFxAw5VY6caggTYWjud" ,
+    "attributes" : [{
+        "trait_type": "fashion",
+        "value" : "Punk Street"
+    },{
+        "trait_type": "weapon",
+        "value" : "Atlas Gauntlets"
+    },{
+        "trait_type": "abilities",
+        "value" : "Brawler"
+    },{
+        "trait_type": "apperance",
+        "value" : "Athletic"
+    }
+]
+
+}

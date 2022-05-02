@@ -1,9 +1,9 @@
 import { useState } from "react";
 import {ethers, BigNumber} from 'ethers';
 import { Box, Button, Flex, Input, Text} from '@chakra-ui/react';
-import NFT from './NFT.json';
+import Arcane from './Arcane.json';
 
-const NFTAddress = "0xAec567Ac3a62ddE6aa3E56cc29cCe455BbF9dB5A"; //address of the deployed mint
+const arcaneAddress = "0xd57a0574dac31f0bDE8290FE487C8393AdbF8f9C"; //address of the deployed nft contract
 
 const MainMint = ({ accounts, setAccounts }) => {
     const [mintAmount, setMintAmount] = useState(1);
@@ -14,8 +14,8 @@ const MainMint = ({ accounts, setAccounts }) => {
             const provider = new ethers.providers.Web3Provider(window.ethereum);
             const signer = provider.getSigner();  //to sign the transaction
             const contract = new ethers.Contract(
-                NFTAddress,
-                NFT.abi,
+                arcaneAddress,
+                Arcane.abi,
                 signer
             );
             try{
@@ -115,11 +115,11 @@ const MainMint = ({ accounts, setAccounts }) => {
                 ):(
                     <Text
                      marginTop="70px"
-                     fontSize="33px"
+                     fontSize="43px"
                      letterSpacing="-5.5%"
                      fontFamily="VT323"
                      textShadow="0 1px #000000"
-                     color="#D6517D"
+                     color="#5EB8FE"
                     > 
                       You must be connected to Mint.
                     </Text>
