@@ -1,0 +1,20 @@
+{
+    "name" : "Jinx",
+    "description" : "Jinx is an eccentric inventor and criminal, taking pleasure in inventing and causing mayhem and destruction.",
+    "image" : "https://ipfs.io/ipfs/QmTao5ubEVs3cnXvjbRfHDRksfiA3utX96W8geMZ75NdFD" ,
+    "attributes" : [{
+        "trait_type": "fashion",
+        "value" : "street punk, natural blue hair "
+    },{
+        "trait_type": "weapon",
+        "value" : "Mr. Sparkles"
+    },{
+        "trait_type": "abilities",
+        "value" : "Inventor"
+    },{
+        "trait_type": "apperance",
+        "value" : "Slender"
+    }
+]
+
+}

@@ -1,0 +1,17 @@
+{
+    "name" : "Ekko",
+    "description" : "To outsiders, Ekko seems to achieve the impossible the first time, every time.",
+    "image" : "https://ipfs.io/ipfs/QmUg4ZSdeSi8VUUrQamMHd7F5GzTGBDK4KHDGe6jKyjzCQ" ,
+    "attributes" : [{
+        "trait_type": "fashion",
+        "value" : "Firelights costume"
+    },{
+        "trait_type": "weapon",
+        "value" : "Z-Drive"
+    },{
+        "trait_type": "abilities",
+        "value" : "Manipulates Time"
+    } 
+]
+
+}
