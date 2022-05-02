@@ -1,10 +1,10 @@
 //SPDX-License-Identifier:UNLICENSED
-pragma solidity ^0.8.4;
+pragma solidity ^0.8.11;
 
-import '@openzeppelin/contracts/token/ERC721/ERC721.sol';
+import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import '@openzeppelin/contracts/access/Ownable.sol';
 
-contract Arcane is ERC721,Ownable {
+contract Arcane is ERC721URIStorage,Ownable {
     uint256 public mintPrice;
     uint256 public totalSupply; //current no. of mints
     uint256 public maxSupply; //total that can be minted
@@ -15,7 +15,7 @@ contract Arcane is ERC721,Ownable {
     mapping (address => uint256) public walletMints; //to keep track of how many each wallet has minted
 
     constructor() payable ERC721('Arcane', 'ARC'){
-        mintPrice = 0.002 ether;
+        mintPrice = 0.02 ether;
         totalSupply = 0;
         maxSupply = 1000;
         maxPerWallet = 3;
