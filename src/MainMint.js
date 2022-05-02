@@ -3,7 +3,7 @@ import {ethers, BigNumber} from 'ethers';
 import { Box, Button, Flex, Input, Text} from '@chakra-ui/react';
 import Arcane from './Arcane.json';
 
-const arcaneAddress = "0xc490ae4084eb32A092A70D50d8Afc618FfaE9052"; //address of the deployed nft contract
+const arcaneAddress = "0xd57a0574dac31f0bDE8290FE487C8393AdbF8f9C"; //address of the deployed nft contract
 
 const MainMint = ({ accounts, setAccounts }) => {
     const [mintAmount, setMintAmount] = useState(1);
@@ -20,7 +20,7 @@ const MainMint = ({ accounts, setAccounts }) => {
             );
             try{
                 const response = await contract.mint(BigNumber.from(mintAmount),{
-                    value: ethers.utils.parseEther((0.002 * mintAmount).toString()),
+                    value: ethers.utils.parseEther((0.02 * mintAmount).toString()),
                 }); //calls mint function from the contract
                 console.log('response: ',response);
             }catch (err) {
