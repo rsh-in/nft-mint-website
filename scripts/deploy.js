@@ -1,16 +1,18 @@
+const { ethers } = require("hardhat");
 
-const hre = require("hardhat");
+async function main(){
+  const Arcane = await ethers.getContractFactory("Arcane") //reference to our contract
+  const arcane = await Arcane.deploy()
+  await arcane.setBaseTokenURI("https://ipfs.io/ipfs/QmYHNiQr5cuzQgisuV1cVzjNhaoUL4B8Hx6XQg7tzGBfRF") //passing in the URI of the metadata json
 
-async function main() {
-
-  const NFT = await hre.ethers.getContractFactory("NFT");
-  const nft = await NFT.deploy();
-
-  await nft.deployed();
-
-  console.log("NFT deployed to:", nft.address);
+  try{
+    await arcane.deployed()
+    console.log(`Contract successfully deployed to ${arcane.address}`)
+    // mintNFT()
+  } catch(err){
+    console.log(`Error: ${err.message}`)
+  }
 }
-
 
 main()
   .then(() => process.exit(0))
