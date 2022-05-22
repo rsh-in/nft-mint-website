@@ -6,7 +6,7 @@ async function main(){
 
   try{
     await arcane.deployed()
-    console.log(`Contract successfully deployed to ${arcane.address} arcaneee`)
+    console.log(`Contract successfully deployed to ${arcane.address} arcane`)
     await arcane.setBaseTokenUri("https://ipfs.io/ipfs/QmZU4L6ud69SdDknTw7WFAWTGGy98fZFoaG217pgoZbh4u") //passing in the URI of the metadata json
     console.log(`Base token URI set`)
     // mintNFT()
