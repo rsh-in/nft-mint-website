@@ -1,4 +1,4 @@
-   ARCANE NFT's  - (Work In Progress)
+   ARCANE NFT's
 ----------------------------------------
 
 NFT mint website to mint ARCANE NFT's. Arcane is a Netflix animated series based on the MOBA game - League of Legends.
