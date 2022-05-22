@@ -15,3 +15,6 @@ Few screenshots of the website -
 
 
 ![ArcaneMint3](https://user-images.githubusercontent.com/39565521/165347731-02357150-064c-4455-b254-c14911c92cf6.png)
+
+
+![arcaneOpensea](https://user-images.githubusercontent.com/39565521/169677284-7ab16514-7256-438b-af4f-8177494d3900.png)
